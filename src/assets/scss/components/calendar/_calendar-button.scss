@@ -1,0 +1,25 @@
+@use './../../mixins/mixins' as mix;
+
+.calendar-button {
+	background: none;
+	border: none;
+	outline: none;
+	@include mix.add-flex(center, center);
+	font-size: 16px;
+	&:hover {
+		background-color: white;
+		border-radius: 50%;
+		cursor: pointer;
+	}
+	&-icon {
+		font-weight: bolder;
+	}
+}
+.calendar-title-button-section {
+	width: 80px;
+	@include mix.add-flex(center, space-between);
+}
+
+.calendar-day-button {
+	
+}
