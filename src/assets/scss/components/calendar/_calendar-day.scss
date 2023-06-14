@@ -11,8 +11,14 @@
 	height: 30px;
 	width: 30px;
 	@include mix.add-flex(center, center);
+	cursor: pointer;
+	color: white;
 	&:hover {
-		background-color: green;
+		background-color: var(--calendar-background-color);
 		border-radius: 50%;
 	}
+}
+.active-day {
+	background-color: var(--calendar-day-bg-color);
+	border-radius: 50%;
 }

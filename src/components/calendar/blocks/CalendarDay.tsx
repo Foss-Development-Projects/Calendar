@@ -10,9 +10,16 @@ const CalendarDay = (props: any) => {
 		<div>
 			<div className={props.customClassName}>
 				{dayRange.map((item: any, index: number) => {
-					return(
-						<span className="calendar-day" key={index}>{item}</span>
-					)
+					if (index == 20 ) {
+						return(
+							<span className="active-day calendar-day" key={index}>{item}</span>
+						)
+					}
+					else {
+						return(
+							<span className="calendar-day" key={index}>{item}</span>
+						)
+					}
 				})}
 			</div>
 		</div>

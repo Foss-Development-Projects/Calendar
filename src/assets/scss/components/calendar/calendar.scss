@@ -4,13 +4,12 @@
 @use './calendar-button';
 
 .calendar {
-	display: grid;
+	// display: grid;
 	width: 100%;
-	height: 100%;
+	height: 250px;
 	max-height: 250px;
-	width: 266px;
 	font-family: 'Open Sans', sans-serif;
-	backdrop-filter: blur(2px);
+	backdrop-filter: blur(2.5px);
 	padding: 5px;
 	border-radius: 10px;
 }
@@ -30,7 +29,7 @@
 	border-radius: 10px;
 }
 .calendar-day-list {
-	min-height: 30px;
+	min-height: 40px;
 	display: grid;
 	grid-template-columns: repeat(7, 30px);
 	align-items: center;
@@ -40,4 +39,7 @@
 }
 .calendar-daybar-name {
 	@include mix.add-flex(center, center);
+	background: linear-gradient(45deg , red, orange);
+	border-radius: 50%;
+	padding: 7px;
 }
