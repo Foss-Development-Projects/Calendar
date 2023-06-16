@@ -6,7 +6,6 @@
 	outline: none;
 	@include mix.add-flex(center, center);
 	font-size: 16px;
-	color: var(--calendar-button-bg-color);
 	&:hover {
 		background-color: var(--calendar-background-color);
 		border-radius: 50%;
@@ -14,6 +13,12 @@
 	}
 	&-icon {
 		font-weight: bolder;
+	}
+	&-year {
+		color: var(--calendar-button-color-1);
+	}
+	&-month {
+		color: var(--calendar-button-color-2);
 	}
 }
 .calendar-title-button-section {

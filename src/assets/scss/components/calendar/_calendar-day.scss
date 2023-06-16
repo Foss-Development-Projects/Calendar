@@ -2,7 +2,7 @@
 .calendar-day-container {
 	display: grid;
 	grid-template-columns: repeat(7, 30px);
-	gap: .5px 5px;
+	gap: 2.5px 5px;
 	padding: 5px 10px;
 }
 .calendar-day {
